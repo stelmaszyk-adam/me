@@ -1,22 +1,7 @@
 import React, { Component } from 'react';
-import pdf from '../../astelmaszykCV.pdf'
+import pdf from '../../Adam _Stelmaszyk.pdf'
 
 export default class About extends Component {
- 
-	
-	downloadEmployeeData = () => {
-		fetch('http://localhost:3000/src/')
-			.then(response => {
-				response.blob().then(blob => {
-					let url = window.URL.createObjectURL(blob);
-					let a = document.createElement('a');
-					a.href = url;
-					a.download = 'astelmaszykCV.pdf';
-					a.click();
-				});
-				//window.location.href = response.url;
-		});
-	}
 
   render() {
 
@@ -47,8 +32,6 @@ export default class About extends Component {
                 <p>
                 {/* some kind of bug */}
                   <a href={pdf} className="button"><i className="fa fa-download" />Download Resume</a>
-                  {/* <a href="#" onClick={this.downloadEmployeeData} className="button"><i className="fa fa-download" />Download Resume</a> */}
-                  {/* <a href="#" onClick={this.downloadEmployeeData}>Download</a> */}
                 </p>
               </div>
             </div> {/* end row */}
