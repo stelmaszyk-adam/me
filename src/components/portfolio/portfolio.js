@@ -54,10 +54,12 @@ export default class Header extends Component {
                             <div className="description-box">
                                 <h4>{portfolioData.firstApp}</h4>
                                 <p>{portfolioData.firstDescription}</p>
-                                <span className="categories"><i className="fa fa-tag" />Mobile App</span>
+                                <span className="categories"><i className="fa fa-tag" />Mobile Application</span>
+                                <span className="categories"><i className="fa fa-tag" />Web Application</span>
                             </div>
                             <div className="link-box">
                                 <a href={portfolioData.firstWeb}>Google Play</a>
+                                <a className="popup-modal-second" href={portfolioData.firstProperWeb}>Website</a>
                                 <a className="popup-modal-second" href={portfolioData.firstFacebook} >Facebook</a>
                                 <a className="popup-modal-dismiss">Close</a>
                             </div>
@@ -67,10 +69,12 @@ export default class Header extends Component {
                             <div className="description-box">
                                 <h4>{portfolioData.secondApp}</h4>
                                 <p>{portfolioData.secondDescription}</p>
-                                <span className="categories"><i className="fa fa-tag" />Mobile App</span>
+                                <span className="categories"><i className="fa fa-tag" />Mobile Application</span>
+                                <span className="categories"><i className="fa fa-tag" />Web Application</span>
                             </div>
                             <div className="link-box">
                                 <a href={portfolioData.secondWeb}>Google Play</a>
+                                <a className="popup-modal-second" href={portfolioData.secondProperWeb}>Website</a>
                                 <a className="popup-modal-second" href={portfolioData.secondFacebook} >Facebook</a>
                                 <a className="popup-modal-dismiss">Close</a>
                             </div>
